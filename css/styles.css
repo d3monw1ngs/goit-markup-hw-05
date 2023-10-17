@@ -124,21 +124,28 @@ img {
     font-weight: 500;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.32px;
+    position: relative;
 }
 
-.active::after {
+.nav-items::after {
     content:' ';
     width: 0;
     height: 4px;
     background-color: var(--ocean);
     border-radius: 2px;
-    display: block;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+
 }
 
-.nav-items:hover::after {
+.nav-items:hover::after,
+.nav-items:focus::after,
+.nav-items:active::after {
     width: 100%;
-    transition: width 0.2s liner;
-    margin-top: 20px;
+    transition: width 0.2s linear;
+    opacity: 1;
 }
 
 .contact-list {
