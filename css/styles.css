@@ -126,6 +126,21 @@ img {
     letter-spacing: 0.32px;
 }
 
+.active::after {
+    content:' ';
+    width: 0;
+    height: 4px;
+    background-color: var(--ocean);
+    border-radius: 2px;
+    display: block;
+}
+
+.nav-items:hover::after {
+    width: 100%;
+    transition: width 0.2s liner;
+    margin-top: 20px;
+}
+
 .contact-list {
     display: flex;
     justify-content: center;
