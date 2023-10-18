@@ -25,7 +25,7 @@
             <nav>
                 <ul class="list nav-list">
                     <li>
-                        <a class="link nav-items" href="./index.html">Studio</a>
+                        <a class="link nav-items active" href="./index.html">Studio</a>
                     </li>
                     <li>
                         <a class="link nav-items" href="./portfolio.html" target="_blank">Portfolio</a>
@@ -58,7 +58,12 @@
                 <h1 class="hero-text">Effective Solution<br />
                 for Your Business
                 </h1>
-                <button class="hero-button button" type="button">Order Service</button>
+                <button class="hero-button button data-modal-open" type="button">Order Service</button>
+                <div class="modal">
+                    <div class="data-modal">
+                        <button type="button" class="modal-button button data-modal-close">&times;</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -362,5 +367,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
