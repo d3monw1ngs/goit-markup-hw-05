@@ -254,6 +254,12 @@ header {
     border: none;
 }
 
+.is-hidden {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: visible;
+}
+
 
 /* PORTFOLIO BUTTONS */
 .filter-button {
