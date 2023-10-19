@@ -247,6 +247,9 @@ header {
     right: 24px;
     top: 24px;
     cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .close-button:hover {
