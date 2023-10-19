@@ -246,11 +246,12 @@ header {
     border-radius: 50%;
     right: 24px;
     top: 24px;
-    cursor: pointer;  
+    cursor: pointer; 
 }
 
 .close-button:hover {
     background-color: var(--iris);
+    color: white;
 }
 
 .is-hidden {
