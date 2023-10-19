@@ -95,6 +95,7 @@ img {
 .button {
     cursor: pointer;
     font-family: "Roboto", sans-serif;
+    border: none;
 }
 
 
@@ -188,10 +189,10 @@ header {
     color: white;
     background: var(--iris);
     border-radius: 4px;
-    border: none;
     display: block;
     margin: 0 auto;
     padding: 16px 32px;
+    transform: translate(-50%, -50%);
 }
 
 .hero-button:focus,
@@ -211,21 +212,16 @@ header {
     background-size: cover;
 }
 
-.modal {
-    display: none;
+.backdrop {
     background-color:rgba(46, 47, 66, 0.4);
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
+    height: 100vh;
 }
 
-.data-modal {
+.modal {
     width: 408px;
     height: 584px;
     border-radius: 4px;
@@ -233,31 +229,36 @@ header {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 
                 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    margin-top: 180px;
-    margin-bottom:13px;
-    z-index: 2;
+    top: 50%;
+    left: 50%;
     position: absolute;
     box-sizing: border-box;
+    transform: translate(-50%, -50%);
 }
 
-.modal-button {
+.close-button {
     position: absolute;
     width: 24px;
     height: 24px;
-    fill: var(--CORNFLOWER, #E7E9FC);
+    background-color: var(--CORNFLOWER, #E7E9FC);
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: right;
-    margin: 24px;
-    border: none;
+    right: 24px;
+    top: 24px;
+    cursor: pointer;  
+}
+
+.close-button:hover {
+    background-color: var(--iris);
 }
 
 .is-hidden {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: visible;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 
